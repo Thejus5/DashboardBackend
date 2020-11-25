@@ -1,0 +1,24 @@
+GET http://localhost:8080/resources
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpZGhhcnRoQHFidXJzdC5jb20iLCJpYXQiOjE2MDYxMTA4NTZ9.aBniBLocNhyMdeGETMVgE-_zCXSehvn7jl0EK8eATEc1
+
+###
+
+POST http://localhost:8080/auth/register
+Content-Type: application/json
+
+
+{
+  "name":"Thejus",
+  "email":"thejus@qburst.com",
+  "password":"123"
+}
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email":"thejus@qburst.com",
+  "password":"123"
+}
